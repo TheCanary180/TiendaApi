@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>    
+    <ion-title>Datos Categoria</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>  
+    <ion-list>
+      <!-- Imagen -->
+      <ion-img width="300" height="200" src="../../assets/imgs/categoria.png"></ion-img>
+
+      <!-- Nombre-->
+      <ion-label>Nombre</ion-label>
+      <ion-input type="text" disabled="true">{{Nombre}}</ion-input>
+        
+      <!-- Descripcion-->    
+      <ion-label>Descripcion</ion-label>        
+      <ion-textarea type="text" disabled="true">{{Descripcion}}</ion-textarea>   
+    
+    </ion-list>
+    <button ion-button color="secundary" (click)="Anadir()">Modificar</button>
+    <button ion-button color="secundary" (click)="Listar()">Borrar</button> 
+
+</ion-content>

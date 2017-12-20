@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Listar Empleados</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let empleado of empleados">
+      <button>{{empleados.nombre}}{{empleados.apellidos}}</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

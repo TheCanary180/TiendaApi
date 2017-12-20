@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar>    
+    <ion-title>Datos Pedidos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>    
+  <ion-list>
+      <!-- Imagen -->
+      <ion-img width="300" height="250" src="../../assets/imgs/pedidos.png"></ion-img>
+  
+    <!-- Facturacion formControlName="Facturacion" tambien es el nombre -->
+    <!-- <ion-item>
+        <ion-label>Nombre a quien va la factura</ion-label>
+        <ion-select [(ngModel)]="categoria">
+          <ion-option value="f">Female</ion-option>
+          <ion-option value="m">Male</ion-option>
+        </ion-select>
+      </ion-item> -->
+
+   <!-- Apellidos -->
+   <ion-label>Apellidos</ion-label>
+   <ion-input type="text"></ion-input>
+    
+    <!-- Dirección -->
+    <ion-label>Dirección</ion-label>
+    <ion-input type="text"></ion-input>
+
+   <!-- Ciudad-->
+   <ion-label>Ciudad</ion-label>
+   <ion-input type="text"></ion-input>
+   
+    <!-- Provincia-->
+    <ion-label>Provincia</ion-label>
+    <ion-input type="text"></ion-input>
+      
+    <!-- Pais-->
+    <ion-label>Pais</ion-label>
+    <ion-input type="text"></ion-input>
+      
+     <!-- Codigo Postal -->
+     <ion-label>Codigo Postal</ion-label>
+     <ion-input type="number"></ion-input>
+     
+    <!-- Empleados formControlName="empleado"-->
+    <!-- <ion-item>
+        <ion-label>Empleados</ion-label>
+        <ion-select [(ngModel)]="categoria">
+          <ion-option value="f">Female</ion-option>
+          <ion-option value="m">Male</ion-option>
+        </ion-select>
+    </ion-item> -->
+
+  <!-- Id Pedidos -->
+  <ion-label>Id Pedidos</ion-label>
+  <ion-input type="text"></ion-input>
+      
+ <!-- Fecha Pedido-->
+  <ion-label>Fecha Pedido</ion-label>
+ <ion-input  type="text"></ion-input>
+  
+ <!-- Fecha Envio -->
+  <ion-label>Fecha Envio</ion-label>
+ <ion-input  type="text"></ion-input>
+   
+  <!-- Fecha entrega-->
+  <ion-label>Fecha entrega</ion-label>
+  <ion-input  type="text"></ion-input>
+   
+    <!-- Producto formControlName="Producto"
+    <ion-item>
+        <ion-label>Producto</ion-label>
+        <ion-select [(ngModel)]="categoria">
+          <ion-option value="f">Female</ion-option>
+          <ion-option value="m">Male</ion-option>
+        </ion-select>
+    </ion-item>-->
+
+     <!-- Cantidad -->
+ <ion-label>Cantidad</ion-label>
+ <ion-input  type="text"></ion-input>
+   
+  <!-- total-->
+  <ion-label>total</ion-label>
+  <ion-input  type="text"></ion-input>
+    
+    </ion-list>
+
+    <button ion-button color="secundary" (click)="Modificar()">Modificar</button>
+    <button ion-button color="secundary" (click)="Borrar()">Borrar</button>
+
+</ion-content>
+  

@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>    
+    <ion-title>Componentes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <form [formGroup]="myForm" (ngSubmit)="guardarDatos()" novalidate>
+    <ion-list>
+        <!-- Imagen -->
+        <ion-img width="300" height="200" src="../../assets/imgs/componentes.png"></ion-img> 
+      
+      <!-- <ion-item>
+        <ion-label>Categoria</ion-label>
+        <ion-select [(ngModel)]="categoria">
+          <ion-option value="f">Female</ion-option>
+          <ion-option value="m">Male</ion-option>
+        </ion-select>
+      </ion-item> -->
+
+    <!-- proveedor formControlName="proveedor" -->
+    <!-- <ion-item>
+      <ion-label>Proveedor</ion-label>
+      <ion-select [(ngModel)]="proveedor">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-item> -->
+
+     <!-- Nombre -->
+     <ion-label>Nombre</ion-label>
+     <ion-input placeholder="Escriba el nombre" formControlName="nombre" type="text"></ion-input>
+    
+     <ion-item *ngIf="myForm.get('nombre').errors && myForm.get('nombre').dirty">
+       <p *ngIf="myForm.get('nombre').hasError('required')">Campo Requerido</p>
+     </ion-item> 
+
+
+      <!-- Precio -->
+      <ion-label>Precio</ion-label>
+      <ion-input placeholder="Escriba el precio" formControlName="precio" type="number"></ion-input>
+    
+      <ion-item *ngIf="myForm.get('precio').errors && myForm.get('precio').dirty">
+        <p *ngIf="myForm.get('precio').hasError('required')">Campo Requerido</p>
+      </ion-item> 
+
+      <!-- UnidadesExistentes -->
+     <ion-label>Unidades Existentes</ion-label>
+     <ion-input placeholder="Escriba el existencias" formControlName="existencias" type="text"></ion-input>
+   
+     <ion-item *ngIf="myForm.get('existencias').errors && myForm.get('existencias').dirty">
+       <p *ngIf="myForm.get('existencias').hasError('required')">Campo Requerido</p>
+     </ion-item> 
+
+      <!-- Unidadess del pedido -->
+      <ion-label>Unidadess del pedido</ion-label>
+      <ion-input placeholder="Escriba el pedido" formControlName="pedido" type="text"></ion-input>
+    
+      <ion-item *ngIf="myForm.get('pedido').errors && myForm.get('pedido').dirty">
+        <p *ngIf="myForm.get('pedido').hasError('required')">Campo Requerido</p>
+      </ion-item> 
+
+     <!-- Descuentos -->
+     <ion-label>Descuentos</ion-label>
+     <ion-input placeholder="Escriba el descuentos" formControlName="descuentos" type="text"></ion-input>
+   
+     <ion-item *ngIf="myForm.get('descuentos').errors && myForm.get('descuentos').dirty">
+       <p *ngIf="myForm.get('descuentos').hasError('required')">Campo Requerido</p>
+     </ion-item> 
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="myForm.invalid">Guardar</button>
+    </div>
+  </form>  
+</ion-content>    

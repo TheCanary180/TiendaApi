@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Listar Pedidos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let pedido of pedidos">
+      <button>{{pedidos.nombre}}</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

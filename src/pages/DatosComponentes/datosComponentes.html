@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>    
+    <ion-title>Datos Componentes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>    
+    <ion-list>
+      <!-- Imagen -->
+      <!-- <ion-img width="300" height="200" src="../../assets/imgs/componentes.png"></ion-img>  -->
+      
+      <!-- <ion-item>
+        <ion-label>Categoria</ion-label>
+        <ion-select [(ngModel)]="categoria">
+          <ion-option value="f">Female</ion-option>
+          <ion-option value="m">Male</ion-option>
+        </ion-select>
+      </ion-item> -->
+
+    <!--proveedor formControlName="proveedor"
+    <ion-item>
+      <ion-label>Proveedor</ion-label>
+      <ion-select [(ngModel)]="proveedor">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-item> -->
+
+     <!-- Nombre -->
+     <ion-label>Nombre</ion-label>
+     <ion-input type="text" disabled="true"></ion-input>
+        
+      <!-- Precio-->
+      <ion-label>Precio</ion-label>
+      <ion-input type="number" disabled="true"></ion-input>
+    
+      <!-- Unidades Existentes-->
+     <ion-label>Unidades Existentes</ion-label>
+     <ion-input type="text" disabled="true"></ion-input>
+   
+
+      <!-- Unidadess del pedido -->
+      <ion-label>Unidadess del pedido</ion-label>
+      <ion-input type="text" disabled="true"></ion-input>
+        
+     <!-- Descuentos -->
+     <ion-label>Descuentos</ion-label>
+     <ion-input type="text" disabled="true"></ion-input>
+        
+    </ion-list>
+    <button ion-button color="secundary" (click)="Modificar()">Modificar</button>
+    <button ion-button color="secundary" (click)="Borrar()">Borrar</button>
+    
+</ion-content>

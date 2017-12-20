@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Listar Componentes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let componente of componentes">
+      <button>{{componentes.nombre}}</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

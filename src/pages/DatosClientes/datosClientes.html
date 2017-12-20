@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Datos Clientes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>    
+    <!-- <ion-list> -->
+      <ion-item *ngFor="let c of cliente"> 
+
+      <!-- Nombre-->
+      <div id="Clientes">
+        <h2>Nombre:</h2>
+        <p>{{c.nombre}}</p><br/>
+      </div>   
+      <!-- Apellidos-->
+        <h2>Apellidos:</h2>
+        <p>{{c.apellidos}}</p><br/>
+        
+      <!-- Edad-->
+        <h2>Edad:</h2>
+        <p>{{c.edad}}</p><br/>
+        
+      <!-- Dirección-->
+        <h2>Dirección:</h2>
+        <p>{{c.direccion}}</p><br/>
+
+      <!-- dni-->
+        <h2>Dni:</h2>
+        <p>{{c.dni}}</p><br/>
+      
+      <!-- Ciudad-->
+        <h2>Ciudad:</h2>
+        <p>{{c.ciudad}}</p><br/>
+        
+      <!-- Provincia-->
+        <h2>Provincia:</h2>
+        <p>{{c.provincia}}</p><br/>
+       
+      <!-- Pais-->
+        <h2>Pais:</h2>
+        <p>{{c.pais}}</p><br/>
+       
+      <!-- Email-->
+        <h2>Email:</h2>
+        <p>{{c.email}}</p><br/>
+         
+      <!-- Codigo Postal-->
+        <h2>Codigo Postal:</h2>
+        <p>{{c.codigoPostal}}</p><br/>
+        
+    
+      <!--Telefono-->
+        <h2>Telefono:</h2>
+        <p>{{c.telefono}}</p><br/>
+                 
+      <!-- </ion-list> -->
+      <button ion-button color="secundary" (click)="Modificar()">Modificar</button>
+      <button ion-button color="secundary" (click)="Borrar()">Borrar</button> 
+    </ion-item>      
+</ion-content>
