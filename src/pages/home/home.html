@@ -6,7 +6,7 @@
 
 
 <ion-content padding>
-    
+<!--     
   <ion-img width="300" height="250" src="../../assets/imgs/1.png"></ion-img>
   <ion-label>Usuario</ion-label>
   <ion-input placeholder="Introduzca la usuario"></ion-input>
@@ -14,7 +14,15 @@
   <ion-label>Contraseña</ion-label>
   <ion-input type="password" placeholder="Introduzca la contraseña"></ion-input>
   <button class="boton" ion-button color="secundary" (click)="NorteComputer()">Entrar</button>
-  <button class="boton" ion-button color="secundary" >Registrarse</button>
-
-    
+  <button class="boton" ion-button color="secundary" >Registrarse</button> -->
+  <button ion-button full (click)="loginWithFB()">Login!</button>
+ 
+  <ion-card *ngIf="userData">
+    <ion-card-header>{{ userData.username }}</ion-card-header>
+    <img [src]="userData.picture" />
+    <ion-card-content>
+      <p>Email: {{ userData.email }}</p>
+      <p>First Name: {{ userData.first_name }}</p>
+    </ion-card-content>
+  </ion-card>  
 </ion-content>

@@ -23,8 +23,6 @@ export class UserServiceProvider {
   }
 
   postCliente(cliente){
-    console.log("hola");
-    console.log(cliente);  
     return this.http.post(
       "http://localhost:8080/TiendaApi-1.0-SNAPSHOT/webresources/com.tienda.tiendaapi.cliente", 
       cliente, 
@@ -34,9 +32,7 @@ export class UserServiceProvider {
     );
   }
 
-  deleteCliente(clienteId){
-    console.log("hola");
-    console.log(clienteId);  
+  deleteCliente(clienteId){     
     return this.http.delete(
       "http://localhost:8080/TiendaApi-1.0-SNAPSHOT/webresources/com.tienda.tiendaapi.cliente/" + clienteId
     );
